@@ -1,2 +1,2 @@
-Flask==2.2.3
-Flask-Testing==0.8.1
+Flask
+Flask-Testing
