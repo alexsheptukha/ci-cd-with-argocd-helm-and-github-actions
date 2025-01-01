@@ -12,8 +12,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
       - run: pip install -r app/requirements.txt
-      - run: pip install --upgrade Werkzeug
       - run: python app/test_app.py
 
   build_and_push_to_docker_hub:
