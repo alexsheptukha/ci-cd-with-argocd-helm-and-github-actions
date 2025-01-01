@@ -20,6 +20,7 @@ def add_task():
       'description': request.json['description'],
     }
     tasks.append(task)
+    print("abubiba")
     return jsonify(task), 201
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
